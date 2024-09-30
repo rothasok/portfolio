@@ -1,17 +1,22 @@
 <template>
-<!-- <Header></Header> -->
-  <Services />
-  <Footer />
+  <section class="container">
+    <h1>Skills</h1>
+   
+    <div class="container-fluid">
+      <Course />
+    </div>
+  </section>
 </template>
+
 <script>
-//  import Header from "@/components/Header.vue";
-import SkillCard from "@/components/Services.vue";
-import Footer from "@/components/Footer.vue";
+import Course from "@/components/Course.vue";
 export default {
   components: {
-    //  Header,
-    Services,
-    Footer,
+    Course,
   },
 };
 </script>
+
+<style scoped>
+/* Add any styles here */
+</style>

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from "@/views/Home.vue"
 import About from "@/views/About.vue"
+import Skill from "@/views/Skill.vue"; // Make sure this path is correct
 // import About from "@/pages/About.vue"
 // import Team from "@/pages/Team/Team.vue"
 // import TeamComponent from "@/components/Team.vue"
@@ -15,7 +16,10 @@ import About from "@/views/About.vue"
 // import NotFound from "@/components/NotFound.vue"
 const routes = [
     { path: '/', component: Home },
-    { path:'/about', component: About},
+    { path: '/about', component: About },
+    { path: '/skills', component: Skill }, // Updated path to /skills
+];
+
     // { path: '/about', component: About },
     // {
     //     path: '/team', component: Team, children: [
@@ -30,7 +34,7 @@ const routes = [
     // { path: '/repos', component: Repository },
     // { path: '/register', component: Register },
     // {path: '/:pathMatch(.*)*', component: NotFound}
-]
+
 
 const router = createRouter({
     history: createWebHistory(),
