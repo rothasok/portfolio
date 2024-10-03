@@ -4,7 +4,7 @@
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container">
        
-        <!-- Toggler Button for Mobile View -->
+       
         <button
           class="navbar-toggler"
           type="button"
@@ -17,24 +17,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navigation Links -->
+    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ">
-            <!-- <li class="nav-item" :class="{ active: $route.path === '/' }">
-              <router-link class="nav-link" to="/">Home</router-link>
-            </li>
-            <li class="nav-item" :class="{ active: $route.path === '/about' }">
-              <router-link class="nav-link" to="/about">About</router-link>
-            </li>
-            <li class="nav-item" :class="{ active: $route.path === '/skills' }">
-              <router-link class="nav-link" to="/skills">Skills</router-link>
-            </li>
-            <li class="nav-item" :class="{ active: $route.path === '/portfolio' }">
-              <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
-            </li>
-            <li class="nav-item" :class="{ active: $route.path === '/contact' }">
-              <router-link class="nav-link" to="/contact">Contact</router-link>
-            </li> -->
+            
 
             <li
               v-for="(item, index) in navs"
@@ -49,7 +35,7 @@
             </li>
          
 
-            <!-- Language Toggle Button -->
+           
             <li class="nav-item">
               <button @click="changeLocale" class="btn btn-link">{{ $t('kh') }}</button>
             </li>
