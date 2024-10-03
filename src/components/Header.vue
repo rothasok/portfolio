@@ -29,6 +29,7 @@
              
             >
               <router-link :to="item.path" class="nav-link"
+                  exact-active-class="active"
                 >{{ $t(item.name) }}
                 <span class="sr-only">(current)</span></router-link
               >
@@ -108,6 +109,9 @@ export default {
 
 .nav_search-btn:hover {
   color: #00e0ff;
+}
+.navbar-nav .nav-link.active {
+  color: #00e0ff; /* Highlight the active link */
 }
 </style>
 

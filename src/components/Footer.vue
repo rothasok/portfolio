@@ -1,4 +1,7 @@
 <template>
+
+
+
    <!-- info section -->
    <section class="info_section layout_padding2">
     <div class="container-fluid"> <!-- Changed from container to container-fluid -->

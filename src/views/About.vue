@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="text-center mt-5">About Me</h1>
+    <h2 class="text-center mt-5">About <span>Me</span></h2>
     <p class="lead text-center">Learn more about my background and skills.</p>
   </div>
  
@@ -9,7 +9,10 @@
         <About />
         
     </div>
+    
   </section>
+   <!-- Footer Section -->
+
  
 </template>
 
@@ -24,3 +27,8 @@ export default {
   name: "PortfolioPage"
 };
 </script>
+<style scoped>
+span {
+  color:#00bbf0;
+}
+</style>
