@@ -19,8 +19,8 @@
 
         <!-- Navigation Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item" :class="{ active: $route.path === '/' }">
+          <ul class="navbar-nav ">
+            <!-- <li class="nav-item" :class="{ active: $route.path === '/' }">
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
             <li class="nav-item" :class="{ active: $route.path === '/about' }">
@@ -34,14 +34,24 @@
             </li>
             <li class="nav-item" :class="{ active: $route.path === '/contact' }">
               <router-link class="nav-link" to="/contact">Contact</router-link>
-            </li>
+            </li> -->
 
-            <!-- Login Link -->
+            <li
+              v-for="(item, index) in navs"
+              class="nav-item"
+              :key="index"
+             
+            >
+              <router-link :to="item.path" class="nav-link"
+                >{{ $t(item.name) }}
+                <span class="sr-only">(current)</span></router-link
+              >
+            </li>
          
 
             <!-- Language Toggle Button -->
             <li class="nav-item">
-              <button @click="changeLocale" class="btn btn-link">Kh</button>
+              <button @click="changeLocale" class="btn btn-link">{{ $t('kh') }}</button>
             </li>
 
            
@@ -69,10 +79,13 @@ export default {
   },
   methods: {
     changeLocale() {
-      // This method can toggle between languages or change locale settings
-      this.$i18n.locale = this.$i18n.locale === 'en' ? 'fr' : 'en'; // Example switch between English and French
+      if(this.$i18n.locale == "khm"){
+        this.$i18n.locale="en";}
+        else{
+          this.$i18n.locale="khm";
+        }
+      },
     },
-  },
 };
 </script>
 

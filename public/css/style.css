@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+/* kantomruy font*/
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif,'Kantumruy Pro';
   color: rgb(251, 249, 249);
   background-color: rgb(0, 0, 0);
   overflow-x: hidden;
@@ -935,7 +938,7 @@ a:focus {
 
 /* General Styles */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif,'Kantumruy Pro';
   color: #9fa6a6;
 }
 
@@ -1006,7 +1009,9 @@ body {
   text-align: justify; /* Justify text for a neat look */
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
-  font-style: normal;
+  word-break: break-word;
+  letter-spacing: -0.4px;
+    
 }
 
 /* Link Styles */

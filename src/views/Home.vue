@@ -5,29 +5,14 @@
       <div class="row align-items-center">
         <!-- Left Column for Text -->
         <div class="col-lg-6 intro-text">
-          <h2>Hello, It's Me</h2>
-          <h1>Rotha Sok</h1>
+          <h2>{{$t("hello it's me")}}</h2>
+          <h1>{{$t("rotha sok")}}</h1>
           <h3>
-            And I'm a
-            <span class="highlight">Designer | Frontend | Backend</span>
+           {{$t("and i am")}}
+            <span class="highlight">{{ $t('designer') }}</span>
           </h3>
-            
-      
           <p >
-            I’m a multidisciplinary professional with a passion for both
-            creative design and technical development. My expertise spans across
-            UI/UX design, frontend development, and backend development,
-            allowing me to build seamless, visually captivating, and highly
-            functional digital experiences. With a strong foundation in design,
-            I transform ideas into visually engaging layouts, while my technical
-            skills in HTML, CSS, JavaScript, and frameworks like Bootstrap and
-            Vue.js help bring those designs to life on the web. Additionally, my
-            backend development experience ensures efficient and scalable
-            systems, integrating databases like MySQL and implementing project
-            management strategies that streamline workflows. I'm always looking
-            for new challenges that allow me to combine creativity with
-            technology, pushing the boundaries of what’s possible in digital
-            solutions.
+          {{ $t('i am a multidisciplinary') }}
           </p>
        
         </div>
@@ -75,8 +60,18 @@ export default {
     Card,
     Why
   },
-  name: "PortfolioPage"
+  name: "PortfolioPage",
+  methods: {
+    changeLocale() {
+      if(this.$i18n.locale == "khm"){
+        this.$i18n.locale="en";}
+        else{
+          this.$i18n.locale="khm";
+        }
+      },
+    },
 };
+
 </script>
 
 
@@ -118,6 +113,7 @@ body {
 
 .intro-text p {
   margin-bottom: 20px;
+  padding-right: 10px;
 }
 .intro-text p {
   margin-bottom: 20px;
