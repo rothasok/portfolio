@@ -40,13 +40,13 @@ export default {
         {
           img: "images/mobile.png",
           detail:
-            "Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus",
+            "The MPTC HRMIS Mobile App streamlines HR processes by providing employees with secure access to personal information, payroll details, and leave management. It uses face recognition for accurate attendance tracking and offers an HR dashboard for key updates. The app supports performance evaluations, enabling supervisors to monitor employee progress, while HR staff can manage records and attendance remotely. With multi-factor authentication, it ensures data security and is available in both Khmer and English. The app reduces reliance on manual processes, creating a more efficient and digitalized HR system.",
           header:"Mobile App"
         },
         {
           img: "images/moi.png",
           detail:
-            "Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus",
+            "The Sub-National Administrative Councils Management Information System (SACMIS), developed by the Ministry of Post and Telecommunications (MPTC) for the Ministry of Interior, is a comprehensive platform designed to enhance the management and operations of sub-national councils. It streamlines administrative tasks such as data management, reporting, and budgeting, ensuring efficient governance at the local level. The system allows for better coordination between provincial, municipal, and district councils, providing real-time data access and improving decision-making. With user-friendly interfaces and secure data handling, SACMIS promotes transparency and accountability within sub-national administrative bodies. This system fosters more efficient and effective public administration across Cambodia's local governments.",
           header:"MOI-SACMIS"
         },
         
