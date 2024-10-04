@@ -201,4 +201,7 @@ export default {
 h1{
   padding-top: 20;
 }
+p,li{
+  font-family: "Caveat", cursive;
+}
 </style>

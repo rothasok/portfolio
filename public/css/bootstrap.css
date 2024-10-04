@@ -621,7 +621,7 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  /* padding-right: 15px;
+  /* /*padding-right: 15px;
   padding-left: 15px; */
 }
 
@@ -8062,6 +8062,8 @@ button.bg-dark:focus {
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important;
+  padding: 10px;
+  background-color: #282929;
 }
 
 .ml-4,
