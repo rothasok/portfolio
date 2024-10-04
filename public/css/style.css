@@ -531,6 +531,7 @@ a:focus {
 
 .why_section .box {
   margin-top: 45px;
+  margin-right: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

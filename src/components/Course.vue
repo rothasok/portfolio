@@ -47,7 +47,8 @@ export default {
 
 <style scoped>
 h1 {
-  color: #333;
+  color: #ffffff;
+  padding-top: 40px;
 }
 button {
   margin-top: 1rem;

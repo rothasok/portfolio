@@ -2,10 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from "@/views/Home.vue"
 import About from "@/views/About.vue"
-import Skill from "@/views/Skill.vue"
+import Skill from "@/views/Blog.vue"
 import Portfolio from "@/views/Portfolio.vue"
 import Blog from "@/views/Blog.vue"
 import Contact from "@/views/Contact.vue"
+import Post from '@/components/Post.vue';
 // import About from "@/pages/About.vue"
 // import Team from "@/pages/Team/Team.vue"
 // import TeamComponent from "@/components/Team.vue"
@@ -24,6 +25,11 @@ const routes = [
     { path: '/portfolio', component: Portfolio },
     { path: '/blog', component: Blog },
     { path: '/contact', component: Contact },
+    {
+        path: '/post/:id', // Ensure this matches the route you are trying to access
+        name: 'post',
+        component: Post,
+      },
 ];
 
     // { path: '/about', component: About },

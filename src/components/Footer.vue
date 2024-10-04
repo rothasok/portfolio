@@ -1,10 +1,16 @@
 <template>
+  <!-- Footer Section -->
+  <footer>
+    <div class="container-fluid">
+      <hr />
+      <p>© 2024 Rotha Sok. All rights reserved.</p>
+    </div>
+  </footer>
 
-
-
-   <!-- info section -->
-   <section class="info_section layout_padding2">
-    <div class="container-fluid"> <!-- Changed from container to container-fluid -->
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container-fluid">
+      <!-- Changed from container to container-fluid -->
       <div class="row">
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_contact">
@@ -43,7 +49,11 @@
           <div class="info_detail">
             <h4>Info</h4>
             <p>
-             With a focus on software development, we aim to deliver exceptional results that help you achieve your goals. Our experienced team combines cutting-edge technology with industry expertise to ensure that every project is handled with the utmost care and precision.
+              With a focus on software development, we aim to deliver
+              exceptional results that help you achieve your goals. Our
+              experienced team combines cutting-edge technology with industry
+              expertise to ensure that every project is handled with the utmost
+              care and precision.
             </p>
           </div>
         </div>
@@ -51,11 +61,16 @@
           <div class="info_link_box">
             <h4>Links</h4>
             <div class="info_links">
-              <a class="active" href="index.html"> Home </a>
-              <a class="" href="about.html"> About </a>
-              <a class="" href="service.html"> Services </a>
-              <a class="" href="why.html"> Why Us </a>
-              <a class="" href="team.html"> Team </a>
+              <div v-for="(item, index) in navs" class="nav-item" :key="index">
+                <router-link
+                  :to="item.path"
+                  
+                  exact-active-class="active"
+                >
+                  {{ $t(item.name) }}
+                  <span class="sr-only">(current)</span>
+                </router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -71,3 +86,46 @@
   </section>
   <!-- end info section -->
 </template>
+<script>
+
+export default {
+  data() {
+    return {
+      navs: [
+        { name: 'home', path: '/' },
+        { name: 'about', path: '/about' },
+        { name: 'blog', path: '/blog' },
+        { name: 'portfolio', path: '/portfolio' },
+        { name: 'contact', path: '/contact' },
+      ],
+    };
+  },
+  methods: {
+    changeLocale() {
+      if(this.$i18n.locale == "khm"){
+        this.$i18n.locale="en";}
+        else{
+          this.$i18n.locale="khm";
+        }
+      },
+    },
+};
+</script>
+
+
+<style scoped>
+/* Footer Section */
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer hr {
+  border-color: #fdfbfb;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+</style>

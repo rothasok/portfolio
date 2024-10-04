@@ -7,7 +7,7 @@ const messages = {
         home: 'Home',
         kh: 'KH',
         about: 'About',
-        skills: 'Skills',
+        blog: 'blog',
         portfolio: 'Portfolio',
         contact: 'Contact',
 
@@ -22,7 +22,7 @@ const messages = {
         home: 'ទំព័រដើម',
         kh: 'EN',
         about: 'អំពីយើង',
-        skills: 'ជំនាញ',
+        blog: 'ប្លុក',
         portfolio: 'កាបូបស្នាដៃ',
         contact: 'ទំនាក់ទំនង',
         "hello it's me": 'សួស្តី! ខ្ញុំគឺ',

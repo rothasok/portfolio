@@ -58,7 +58,7 @@ export default {
       navs: [
         { name: 'home', path: '/' },
         { name: 'about', path: '/about' },
-        { name: 'skills', path: '/skills' },
+        { name: 'blog', path: '/blog' },
         { name: 'portfolio', path: '/portfolio' },
         { name: 'contact', path: '/contact' },
       ],
