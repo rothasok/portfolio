@@ -16,7 +16,7 @@
         </div>
 
         <!-- Right Column for Image -->
-        <div :class="['col-lg-6', 'intro-image', animate ? 'fly-in-right' : '']">
+        <div :class="['col-lg-6', animate ? 'fly-in-right' : '']">
           <div class="hexagon-wrapper">
             <img src="images/photo1.jpg" alt="Rotha Sok" />
           </div>
@@ -36,7 +36,7 @@
 
 <script>
 import Card from "@/components/Card.vue";  // Ensure correct path to the component
-import Why from "@/components/Why.vue";
+import Why from "@/components/work.vue";
 
 export default {
   components: {
@@ -107,7 +107,13 @@ body {
 .intro-text p {
   margin-bottom: 20px;
   text-align: justify;
-  padding-right: 10px;
+  padding-right: 40px; /* Default padding for smaller screens */
+}
+
+@media screen and (min-width: 990px) {
+  .intro-text p {
+    padding-right: 20px; /* Padding for screens greater than 990px */
+  }
 }
 
 .intro-image {

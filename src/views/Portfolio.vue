@@ -213,11 +213,19 @@
         </p>
       </div>
     </section>
+
+    <Portfolio_Card />
   </div>
 </template>
 
 <script>
+import Portfolio_Card from "@/components/Portfolio_Card.vue";
+
 export default {
+  components:{
+    
+    Portfolio_Card,
+  },
   name: "Portfolio",
 };
 </script>
@@ -230,6 +238,7 @@ export default {
 p,li{
   font-family: "Caveat", cursive;
 }
+
 h1,
 h3 {
   text-align: center;
