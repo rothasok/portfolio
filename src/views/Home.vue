@@ -68,6 +68,7 @@ export default {
 </script>
 
 <style scoped>
+<style scoped>
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -114,7 +115,6 @@ body {
   .intro-text p {
     padding-right: 20px; /* Padding for screens greater than 990px */
   }
-  
 }
 
 .intro-image {
@@ -124,8 +124,8 @@ body {
 }
 
 .hexagon-wrapper {
-  width: 500px;
-  height: 500px;
+  width: 500px; /* Default size */
+  height: 500px; /* Default size */
   background-color: #000;
 }
 
@@ -134,6 +134,19 @@ body {
   height: 100%;
   object-fit: cover;
   background-color: #000;
+}
+
+/* Media query for screens smaller than 550px */
+@media (max-width: 550px) {
+  .hexagon-wrapper {
+    width: 300px; /* Adjust width for smaller screens */
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .hexagon-wrapper img {
+    width: 100%; /* Ensure the image fits within the hexagon */
+    height: 100%; /* Maintain aspect ratio */
+  }
 }
 
 /* Fly-in Animations */
@@ -208,4 +221,6 @@ footer p {
   margin: 10px 0;
   font-size: 14px;
 }
+
+
 </style>
