@@ -18,7 +18,7 @@
         <!-- Right Column for Image -->
         <div :class="['col-lg-6', animate ? 'fly-in-right' : '']">
           <div class="hexagon-wrapper">
-            <img src="images/photo1.jpg" alt="Rotha Sok" />
+            <img src="images/photo2.jpg" alt="Rotha Sok" />
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@ body {
 
 /* Container for Intro Section */
 .intro {
-  padding: 50px 0;
+  padding: 20px 0;
   overflow: hidden; /* Ensure no overflow during animation */
 }
 
@@ -139,8 +139,8 @@ body {
 /* Media query for screens smaller than 550px */
 @media (max-width: 550px) {
   .hexagon-wrapper {
-    width: 300px; /* Adjust width for smaller screens */
-    height: 300px; /* Adjust height for smaller screens */
+    width: 400px; /* Adjust width for smaller screens */
+    height: 400px; /* Adjust height for smaller screens */
   }
 
   .hexagon-wrapper img {
@@ -182,7 +182,7 @@ body {
 
 /* Skills Section */
 .skills {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 /* Additional styles for sections */
