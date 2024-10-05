@@ -114,6 +114,7 @@ body {
   .intro-text p {
     padding-right: 20px; /* Padding for screens greater than 990px */
   }
+  
 }
 
 .intro-image {
