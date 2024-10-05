@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import urlAPI from "@/Utils/api.js";
 export default {
   data() {
     return {
@@ -29,12 +30,14 @@ export default {
       this.error = null;
 
       try {
-        const response = await fetch("https://official-joke-api.appspot.com/jokes/programming/random");
+
+    
+        const response = await fetch(urlAPI());
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        this.joke = data[0]; // The response is an array, take the first joke
+        this.joke = data[0]; 
       } catch (error) {
         this.error = "Failed to load joke.";
       } finally {
