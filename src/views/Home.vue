@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style scoped>
-<style scoped>
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;

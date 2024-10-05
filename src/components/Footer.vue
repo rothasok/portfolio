@@ -16,10 +16,11 @@
           <div class="info_contact">
             <h4>Address</h4>
             <div class="contact_link_box">
-              <a href="">
+              
+                 <router-link to="/contact" exact-active-class="active">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span> Location </span>
-              </a>
+                 </router-link>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span> Call +855 773939 </span>
@@ -31,16 +32,20 @@
             </div>
           </div>
           <div class="info_social">
-            <a href="">
+            <a
+              href="https://web.facebook.com/rotha.sok/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a href="https://x.com/Rotha29470398">
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
             <a href="">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/rothasok/">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
@@ -62,11 +67,7 @@
             <h4>Links</h4>
             <div class="info_links">
               <div v-for="(item, index) in navs" class="nav-item" :key="index">
-                <router-link
-                  :to="item.path"
-                  
-                  exact-active-class="active"
-                >
+                <router-link :to="item.path" exact-active-class="active">
                   {{ $t(item.name) }}
                   <span class="sr-only">(current)</span>
                 </router-link>
@@ -87,28 +88,27 @@
   <!-- end info section -->
 </template>
 <script>
-
 export default {
   data() {
     return {
       navs: [
-        { name: 'home', path: '/' },
-        { name: 'about', path: '/about' },
-        { name: 'blog', path: '/blog' },
-        { name: 'portfolio', path: '/portfolio' },
-        { name: 'contact', path: '/contact' },
+        { name: "home", path: "/" },
+        { name: "about", path: "/about" },
+        { name: "blog", path: "/blog" },
+        { name: "portfolio", path: "/portfolio" },
+        { name: "contact", path: "/contact" },
       ],
     };
   },
   methods: {
     changeLocale() {
-      if(this.$i18n.locale == "khm"){
-        this.$i18n.locale="en";}
-        else{
-          this.$i18n.locale="khm";
-        }
-      },
+      if (this.$i18n.locale == "khm") {
+        this.$i18n.locale = "en";
+      } else {
+        this.$i18n.locale = "khm";
+      }
     },
+  },
 };
 </script>
 

@@ -97,10 +97,10 @@
       <h3><i class="fas fa-graduation-cap"></i> Education</h3>
       <ul>
         <li>
-          <strong
-            ><i class="fas fa-university"></i> Master of ICT Techno
-            Policy</strong
-          >
+          
+            <i class="fas fa-university"></i> Master of ICT Techno
+            Policy
+          
           <br />
           Soongsil University, Seoul, South Korea (Aug 2022 - Dec 2023)
           <br />
@@ -108,18 +108,15 @@
           initiatives in Cambodia”
         </li>
         <li>
-          <strong
-            ><i class="fas fa-university"></i> Master of Science in Information
-            Technology</strong
-          >
+         <i class="fas fa-university"></i> Master of Science in Information
+            Technology
+          
           <br />
           Royal University of Phnom Penh, Cambodia (Nov 2005 - Dec 2007)
         </li>
         <li>
-          <strong
-            ><i class="fas fa-university"></i> Bachelor of Science in Computer
-            Science and Engineering</strong
-          >
+         <i class="fas fa-university"></i> Bachelor of Science in Computer
+            Science and Engineering
           <br />
           Royal University of Phnom Penh, Cambodia (Oct 2001 - Apr 2005)
         </li>
@@ -131,38 +128,30 @@
       <h3><i class="fas fa-chalkboard"></i> Training Courses</h3>
       <ul>
         <li>
-          <strong
-            ><i class="fas fa-award"></i> ICT Core Personnel Development IT
-            Architect</strong
-          >, Okinawa, Japan (Jan 13 – Jun 04, 2021)
+          
+            <i class="fas fa-award"></i> ICT Core Personnel Development IT
+            Architect, Okinawa, Japan (Jan 13 – Jun 04, 2021)
         </li>
         <li>
-          <strong
-            ><i class="fas fa-award"></i> Utilization of ICT services and
-            E-application</strong
-          >, Tokyo, Japan (Mar 01 - Mar 18, 2016)
+          <i class="fas fa-award"></i> Utilization of ICT services and
+            E-application, Tokyo, Japan (Mar 01 - Mar 18, 2016)
         </li>
         <li>
-          <strong><i class="fas fa-award"></i> Information Security</strong>,
+          <i class="fas fa-award"></i> Information Security,
           Seoul, Republic of Korea (Nov 15 - Nov 21, 2015)
         </li>
         <li>
-          <strong
-            ><i class="fas fa-award"></i> Big Data Analytics and Applications in
-            ICT Industry</strong
-          >, Xi’an, China (Oct 18 - Oct 29, 2015)
+        
+            <i class="fas fa-award"></i> Big Data Analytics and Applications in
+            ICT Industry, Xi’an, China (Oct 18 - Oct 29, 2015)
         </li>
         <li>
-          <strong
-            ><i class="fas fa-award"></i> IT Project Design and
-            Management</strong
-          >, Phnom Penh (Jun 01 - Jun 12, 2009)
+         <i class="fas fa-award"></i> IT Project Design and
+            Management, Phnom Penh (Jun 01 - Jun 12, 2009)
         </li>
         <li>
-          <strong
-            ><i class="fas fa-award"></i> Software Development
-            Techniques</strong
-          >, New Delhi, India (Jan 12 - Apr 03, 2009)
+          <i class="fas fa-award"></i> Software Development
+            Techniques, New Delhi, India (Jan 12 - Apr 03, 2009)
         </li>
       </ul>
     </section>
@@ -232,11 +221,12 @@ export default {
 
 <style scoped>
 .portfolio {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+  font-family: Caveat;
+  padding: 16px;
 }
-p,li{
-  font-family: "Caveat", cursive;
+li{
+  font-family: Caveat;
+  font-size: 16px;
 }
 
 h1,

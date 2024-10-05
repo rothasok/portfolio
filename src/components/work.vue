@@ -2,7 +2,7 @@
   <section class="why_section layout_padding">
     
       <div class="heading_container heading_center">
-        <h2>Some of my latest <span>Work</span></h2>
+        <h2>Some of my latest <span>Works</span></h2>
       </div>
      <div class="row">
      

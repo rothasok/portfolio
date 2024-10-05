@@ -138,7 +138,7 @@ export default {
 }
 
 .post-excerpt {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .read-more {
@@ -175,7 +175,7 @@ export default {
 }
 
 .card-excerpt {
-  font-size: 14px;
+  font-size: 18px;
   color: #ffffff;
 }
 
@@ -202,6 +202,7 @@ h1{
   padding-top: 20;
 }
 p,li{
-  font-family: "Caveat", cursive;
+  font-family:caveat;
+  font-size: 18pt;
 }
 </style>

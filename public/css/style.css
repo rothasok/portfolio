@@ -1004,12 +1004,12 @@ body {
 
 /* Description Styles */
 .detail-box p {
-  font-size: 16px; /* Standard text size */
+  font-size: 18px; /* Standard text size */
   font-weight: 400; /* Normal font weight */
   line-height: 1.6; /* Better line spacing */
   color: #9fa6a6; /* Slightly lighter color */
   text-align: justify; /* Justify text for a neat look */
-  font-family: "Caveat", cursive;
+  font-family: "Caveat";
   font-optical-sizing: auto;
   word-break: break-word;
   letter-spacing: -0.4px;

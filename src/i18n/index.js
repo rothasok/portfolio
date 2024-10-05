@@ -7,7 +7,7 @@ const messages = {
         home: 'Home',
         kh: 'KH',
         about: 'About',
-        blog: 'blog',
+        blog: 'Blog',
         portfolio: 'Portfolio',
         contact: 'Contact',
 
@@ -21,7 +21,7 @@ const messages = {
     khm: {
         home: 'ទំព័រដើម',
         kh: 'EN',
-        about: 'អំពីយើង',
+        about: 'អំពីខ្ញុំ',
         blog: 'ប្លុក',
         portfolio: 'កាបូបស្នាដៃ',
         contact: 'ទំនាក់ទំនង',
