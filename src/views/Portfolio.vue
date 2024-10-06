@@ -15,10 +15,10 @@
     <!-- Professional Skills Section -->
 
     <!-- <section class="skills"> -->
-      <div class="container justify-content-center pr-5">
+      <div class="container justify-content-center">
         <h3><i class="fas fa-tools"></i> Professional Skills</h3>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-lg-4 col-xl-4">
             <div class="card mb-4">
               <h5><i class="fas fa-code"></i> Software Standard Development</h5>
               <ul>
@@ -276,11 +276,18 @@ i {
   margin-right: 10px;
 }
 
-.container{
-  margin:0;
-  padding:0;
-  align-content: center;
-  
+.row {
+  margin: 0;
+  padding: 0;
+  /* align-items: center; */
+}
+
+/* For large screens */
+@media (min-width: 1px) { 
+  .row {
+    padding-right: 0; 
+   /* padding: auto; */
+  }
 }
  .col-md-4 {
   position: relative;
