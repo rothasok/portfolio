@@ -14,8 +14,8 @@
 
     <!-- Professional Skills Section -->
 
-    <section class="skills">
-      <div class="container">
+    <!-- <section class="skills"> -->
+      <div class="container justify-content-center pr-5">
         <h3><i class="fas fa-tools"></i> Professional Skills</h3>
         <div class="row">
           <div class="col-md-4">
@@ -90,7 +90,7 @@
           </div>
         </div>
       </div>
-    </section>
+    <!-- </section> -->
 
     <!-- Education Section -->
     <section class="education">
@@ -276,7 +276,12 @@ i {
   margin-right: 10px;
 }
 
-
+.container{
+  margin:0;
+  padding:0;
+  align-content: center;
+  
+}
  .col-md-4 {
   position: relative;
   width: 100%;
