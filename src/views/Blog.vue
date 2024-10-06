@@ -10,7 +10,7 @@
                 <img
                   src="images/brain.png"
                   alt="Featured Blog Post"
-                  class="img-fluid"
+                  class="img-fluid custom-img"
                 />
               </div>
               <div class="col-8 mr-20 pr-3 pb-4 pt-5">
@@ -33,14 +33,14 @@
       </div>
       <div class="box  pr-3 pb-4 pt-5">
       
-        <div class="row justify-content-center">
+        <div class="row justify-content-center g-4">
           <div
-            class="col-12 col-sm-6 col-md-4"
+            class="col-12 col-sm-6 col-md-4 col-lg-4 "
             v-for="post in posts"
             :key="post.id"
           >
             <div>
-              <img :src="post.thumbnail" :alt="post.title" />
+              <img :src="post.thumbnail" :alt="post.title" class="img-fluid custom-img" />
               <h3 class="card-title">{{ post.title }}</h3>
               <p class="card-excerpt">{{ post.excerpt }}</p>
               <router-link
@@ -224,12 +224,34 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0;
   margin-bottom: 40px; /* Add space between the boxes */
 }
 
 .box + .box {
   margin-top: 40px; /* Optional, if you want space from the top of the second box */
 }
+/* Default image size */
+.custom-img {
+  width: 100%;
+  max-width: 300px; /* You can adjust this size */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* For medium screens and below */
+@media (max-width: 768px) {
+  .custom-img {
+    max-width: 250px; /* Shrink the image a bit more */
+  }
+}
+
+/* For small screens and below */
+@media (max-width: 576px) {
+  .custom-img {
+    max-width: 200px; /* Smaller images for small devices */
+  }
+}
+
 
 </style>
