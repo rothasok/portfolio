@@ -38,5 +38,8 @@ export default {
 h2{
   padding: 40px;
 }
+h5{
+  font-family: Caveat,"Kantumruy Pro";
+}
 </style>
 
