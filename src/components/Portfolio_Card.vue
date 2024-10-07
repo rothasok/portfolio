@@ -11,9 +11,9 @@
             <img :src="item.img" alt="" />
           </div>
           <div class="detail-box">
-            <h5>{{item.header}}</h5>
+            <h5>{{$t(item.header)}}</h5>
             <p>
-              {{item.detail}}
+              {{$t(item.detail)}}
             </p>
           </div>
         </div>
