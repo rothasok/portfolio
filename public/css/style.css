@@ -884,6 +884,7 @@ a:focus {
   height: 45px;
   color: #ffffff;
   outline: none;
+  
 }
 
 .info_section form input::-webkit-input-placeholder {
@@ -1009,7 +1010,7 @@ body {
   line-height: 1.6; /* Better line spacing */
   color: #9fa6a6; /* Slightly lighter color */
   text-align: justify; /* Justify text for a neat look */
-  font-family: "Caveat";
+  font-family: "Caveat","Kantumruy Pro";
   font-optical-sizing: auto;
   word-break: break-word;
   letter-spacing: -0.4px;

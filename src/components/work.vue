@@ -2,7 +2,7 @@
   <section class="why_section layout_padding">
     
       <div class="heading_container heading_center">
-        <h2>Some of my latest <span>Works</span></h2>
+        <h2><span>{{$t('latest work')}}</span></h2>
       </div>
      <div class="row">
      
@@ -12,9 +12,9 @@
             <img :src="item.img" alt="" />
           </div>
           <div class="detail-box">
-            <h5>{{item.header}}</h5>
+            <h5>{{$t(item.header)}}</h5>
             <p>
-              {{item.detail}}
+              {{$t(item.detail)}}
             </p>
           </div>
         </div>

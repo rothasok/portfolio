@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_contact">
-            <h4>Address</h4>
+            <h4>{{$t('address')}}</h4>
             <div class="contact_link_box">
               
                  <router-link to="/contact" exact-active-class="active">
@@ -52,19 +52,15 @@
         </div>
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_detail">
-            <h4>Info</h4>
+            <h4>{{$t('info')}}</h4>
             <p>
-              With a focus on software development, we aim to deliver
-              exceptional results that help you achieve your goals. Our
-              experienced team combines cutting-edge technology with industry
-              expertise to ensure that every project is handled with the utmost
-              care and precision.
+             {{$t('info desc')}}
             </p>
           </div>
         </div>
         <div class="col-md-6 col-lg-2 mx-auto info_col">
           <div class="info_link_box">
-            <h4>Links</h4>
+            <h4>{{ $t('link') }}</h4>
             <div class="info_links">
               <div v-for="(item, index) in navs" class="nav-item" :key="index">
                 <router-link :to="item.path" exact-active-class="active">
@@ -76,10 +72,10 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-3 info_col">
-          <h4>Subscribe</h4>
+          <h4>{{ $t('subscribe') }}</h4>
           <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">Subscribe</button>
+            <input type="text" :placeholder="$t('enter email')" />
+            <button type="submit">{{ $t('subscribe') }}</button>
           </form>
         </div>
       </div>

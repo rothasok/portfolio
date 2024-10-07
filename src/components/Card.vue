@@ -4,10 +4,9 @@
     <!-- <div class="service_container"> -->
     <!-- <div class="container"> -->
     <div class="heading_container heading_center">
-      <h2>my <span>Profession</span></h2>
+      <h2><span>{{ $t('my profession') }}</span></h2>
       <p>
-        "a professional who designs, develops, tests, and maintains software
-        applications."
+       {{ $t('professional desc') }}
       </p>
     </div>
     <div class="row justify-content-center ">
@@ -21,8 +20,8 @@
             <img :src="service.image" alt="Service Image" />
           </div>
           <div class="detail-box">
-            <h5>{{ service.title }}</h5>
-            <p>{{ service.description }}</p>
+            <h5>{{ $t(service.title) }}</h5>
+            <p>{{ $t(service.description) }}</p>
           </div>
         </div>
       </div>
@@ -42,19 +41,19 @@ export default {
           image: "images/education.png",
           title: "highlighting the skills",
           description:
-            "My technical skills include proficiency in Microsoft products (VB.NET, C#, SQL Server), web development (HTML, CSS, JavaScript, Bootstrap, Vue.js), database management (MySQL), and project management. I'm also skilled in creating user-friendly interfaces through UI/UX design.lastly, i've engaged myself in ICT policy.",
+            "skill desc",
         },
         {
           image: "images/profession.png",
-          title: "Achievements",
+          title: "achievements",
           description:
-            "My achievements include the development of the MPTC HRMIS, Senate-Staff Management System (WinForm), MAFF-HRMIS (WinForm), MOI-Sub-National Administrative Councils Management Information System, Attendant System, and HRMIS-Mobile App.",
+            "achievement desc",
         },
         {
           image: "images/certificate.png",
-          title: "Education",
+          title: "education",
           description:
-            "Experienced ICT professional with a strong foundation in computer science and engineering. Possessing a Master's degree in ICT Techno Policy from Soongsil University, Korea, with a thesis on E-participation initiatives in Cambodia. Proven track record in project management, software development, and information security. Skilled in utilizing ICT services and applications, with expertise in big data analytics. Committed to driving technological advancements and contributing to the development of the ICT sector.",
+            "edcuation desc",
         },
       ],
     };
